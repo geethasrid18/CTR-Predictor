@@ -1,0 +1,42 @@
+{
+  "results": [
+    {
+      "model": "Logistic Regression",
+      "auc_roc": 0.6731,
+      "log_loss": 0.645,
+      "baseline_ctr": 0.0629,
+      "precision@top1%": 0.2525,
+      "lift@top1%": 4.01,
+      "precision@top5%": 0.182,
+      "lift@top5%": 2.89,
+      "precision@top10%": 0.1532,
+      "lift@top10%": 2.44,
+      "train_time_sec": 3.64
+    },
+    {
+      "model": "XGBoost",
+      "auc_roc": 0.6874,
+      "log_loss": 0.5689,
+      "baseline_ctr": 0.0629,
+      "precision@top1%": 0.26,
+      "lift@top1%": 4.13,
+      "precision@top5%": 0.1955,
+      "lift@top5%": 3.11,
+      "precision@top10%": 0.1653,
+      "lift@top10%": 2.63,
+      "train_time_sec": 2.77
+    }
+  ],
+  "feature_importance": {
+    "ad_position": 162.24853515625,
+    "hour_of_day": 61.49989700317383,
+    "placement": 52.60107421875,
+    "device": 47.4025764465332,
+    "ad_quality_score": 45.695308685302734,
+    "ad_category": 43.89380645751953,
+    "user_past_ctr": 43.42402648925781,
+    "age_bucket": 38.75747299194336,
+    "bid_price": 36.59153366088867,
+    "day_of_week": 33.07857131958008
+  }
+}
